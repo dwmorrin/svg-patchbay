@@ -1,0 +1,10 @@
+{
+  "name": "svg-patchbay",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "interactive patchbay",
+  "main": "index.js",
+  "repository": "https://github.com/dwmorrin/svg-patchbay",
+  "author": "David Morrin <dwmorrin@gmail.com>",
+  "license": "MIT"
+}

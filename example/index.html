@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <script src="./Patchbay.js"></script>
+    <script>
+      new Patchbay({
+        name: "Patchbay",
+        data: [
+          [
+            {
+              name: "Interface Out",
+              span: 8,
+              color: "#c61f3e",
+              enumeration: "1",
+              description: "Description",
+              normals: "",
+              tags: [],
+            },
+            {
+              name: "Main Output",
+              span: 2,
+              color: "blue",
+              enumeration: ["L", "R"],
+              description: "Description",
+              normals: "",
+              tags: [],
+            },
+          ],
+          [
+            {
+              name: "Console Line Inputs",
+              span: 8,
+              color: "seagreen",
+              enumeration: "1",
+              description: "Description",
+              normals: "",
+              tags: [],
+            },
+            {
+              name: "Monitors",
+              span: 2,
+              color: "yellow",
+              enumeration: ["L", "R"],
+              description: "Description",
+              normals: "",
+              tags: [],
+            },
+          ],
+        ],
+      });
+    </script>
+  </body>
+</html>

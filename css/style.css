@@ -1,0 +1,333 @@
+.blocker {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.centered {
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 50%;
+}
+
+.patchPoint[patched="false"]:hover,
+.patchGroup:hover {
+  fill-opacity: 0.4;
+  fill: white;
+  cursor: pointer;
+}
+
+.save {
+  left: calc(50%);
+  position: absolute;
+  text-align: center;
+  top: calc(100% - 120px);
+  z-index: 1;
+  font-size: xx-large;
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+}
+
+.patchGroupEdit {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 360px;
+}
+
+.modal {
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+}
+
+@media print {
+  #controls,
+  #div__search {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #controls {
+    display: none;
+  }
+  #div__search {
+    width: 90%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #input__search {
+    border: none;
+    font-size: small;
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+div.pass {
+  background-color: lightblue;
+  box-shadow: 1px 1px 10px #888888;
+  border-radius: 2px;
+  position: absolute;
+  margin: 25%;
+  /*top: 50%;
+  left: 50%;*/
+  width: 50%;
+  height: 50px;
+  z-index: 2;
+}
+
+div.pass input {
+  margin-top: 15px;
+  margin-left: 100px;
+  width: 250px;
+}
+div.pass button {
+  margin-left: 10px;
+}
+
+html,
+body {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #d9d9d9;
+  font-family: "Arial";
+  overflow: hidden; /*NO SCROLLBARS*/
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li p {
+  font-size: small;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+li.searchResult {
+  cursor: pointer;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+li.searchResult:hover {
+  color: red;
+}
+
+use {
+  pointer-events: none;
+}
+
+.cableOut,
+.noEvent,
+.tipBox {
+  pointer-events: none;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: default;
+  height: 15px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.normals {
+  visibility: hidden;
+}
+
+.panner {
+  background: none;
+  border: none;
+  cursor: default;
+  outline: none;
+  padding: 0;
+}
+
+.panAndZoom {
+  cursor: pointer;
+}
+
+#button__searchCancel {
+  background-color: white;
+  border: none;
+  color: #d9d9d9;
+  display: none;
+  font-size: large;
+  left: 420px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+#button__zoomIn {
+  margin-top: 10px;
+}
+
+#controls {
+  left: calc(100% - 80px);
+  position: absolute;
+  text-align: center;
+  top: calc(100% - 120px);
+  z-index: 1;
+}
+
+#controls button.panAndZoom {
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 1px 1px 3px #666666;
+  height: 25px;
+  width: 25px;
+}
+
+.tipBox {
+  background-color: white; /*#d9d9d9;*/
+  border: 1px solid black;
+  cursor: default;
+  font-family: arial;
+  max-width: 500px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tipBox h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#div__edit {
+  background-color: white; /*#d9d9d9;*/
+  border: 1px solid black;
+  cursor: default;
+  font-family: arial;
+  width: 600px;
+  /*max-width: 500px;*/
+  padding: 5px;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+}
+
+#div__edit h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#div__edit input {
+  width: 100%; /*
+  display: block;
+  overflow: auto;*/
+}
+
+#div__opt {
+  background-color: white;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 1px 1px 3px #888888;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+#div__opt p {
+  font-size: small;
+  margin-top: 0;
+  max-width: 200px;
+}
+
+#div__opt select {
+  margin: 10px;
+}
+
+#overview {
+  cursor: pointer;
+  left: 10px;
+  position: absolute;
+  bottom: 2%;
+  z-index: 1;
+}
+
+#div__search {
+  background-color: white;
+  /*border:1px solid black;*/
+  border-radius: 2px 2px 2px 0;
+  box-shadow: 2px 2px 4px #666666;
+  z-index: 1;
+  cursor: default;
+}
+
+#div__searchResults {
+  background-color: white;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 1px 1px 2px #888888;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  left: 25px;
+  z-index: 1;
+}
+@media (min-width: 601px) {
+  #input__search {
+    border: none;
+    font-size: medium;
+    height: 30px;
+    margin: 10px;
+    width: 400px;
+  }
+  #div__search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+#panner {
+  margin-bottom: 15px;
+}
+
+#panner svg {
+  height: 20px;
+  width: 25px;
+}
+
+#panner div {
+  height: 15px;
+}
+
+#patchbay {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+#svg__menu {
+  margin: 25%;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
